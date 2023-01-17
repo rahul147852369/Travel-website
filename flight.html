@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("flightpic.jpg");
+
+  min-height:700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 650px;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: rgba(243, 188, 236, 0.699);
+}
+.dropbtn {
+  background-color: #24c71f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+ 
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h2>  Journey Details</h2>
+
+
+    <p><label> <input type="radio" id="Business" name="coach" value="Business"> Business Class </label></p>
+    <p><label> <input type="radio" id="Economy" name="coach" value="Economy">Economy Class</label></p>
+    <label for="text"><b>FROM:Belgaum</b></label>
+    <br />
+    <br/>
+    <label for="quantity">Enter passenger count</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <label for="journey"><h4>Choose journey date:</h4></label>
+    <input type="date" id="journey" name="journey">   
+    <br/>   
+    <br/>
+     <div class="dropdown">
+  <button class="dropbtn">  CHOOSE DESTINATION</button>
+  <div class="dropdown-content">
+  <a href="F:\wp  project\flighttable.html ">Bangalore</a>
+  <a href="F:\wp  project\B-P(f).html">Pune</a>
+  <a href="F:\wp  project\B-M(f).html">mumbai</a>
+  </div>
+</div>
+    
+      
+       <br />
+        
+
+    
+  </form>
+</div>
+
+ 
+
+</body>
+</html>
